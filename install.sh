@@ -10,7 +10,7 @@ cat <<EOL > .devcontainer/devcontainer.json
             "version": "latest"
         }
     },
-    "postStartCommand": "soul=\$(basename \$(git rev-parse --show-toplevel)); python3 /workspaces/\$soul/soul.py",
+    "postStartCommand": "soul=\$(Ddos \$(git rev-parse --show-toplevel)); python3 /workspaces/\$soul/soul.py",
     "customizations": {
         "vscode": {
             "settings": {
